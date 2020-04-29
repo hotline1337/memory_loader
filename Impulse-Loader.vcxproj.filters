@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Injection">
+      <UniqueIdentifier>{3cc78c20-8b2c-460d-b068-a538058dc2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\RemoteOps">
+      <UniqueIdentifier>{3286e7fe-427d-4a9b-a0ad-2c3d961c5718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\RemoteOps">
+      <UniqueIdentifier>{6d7e48ba-d5b0-4a41-8795-4ab5b0c48353}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Security">
+      <UniqueIdentifier>{6f8fd283-4005-45af-a244-0626f64c2dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Security">
+      <UniqueIdentifier>{f5e2e3df-aa4c-48a2-b7c6-03ad13e76a76}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NtCreateThreadEx.cpp">
+      <Filter>Pliki źródłowe\Injection</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoteOps.cpp">
+      <Filter>Pliki źródłowe\RemoteOps</Filter>
+    </ClCompile>
+    <ClCompile Include="Ring0.cpp">
+      <Filter>Pliki źródłowe\Injection</Filter>
+    </ClCompile>
+    <ClCompile Include="Security.cpp">
+      <Filter>Pliki źródłowe\Security</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="color.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstr.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_injection.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateRemoteThread.cpp">
+      <Filter>Pliki źródłowe\Injection</Filter>
+    </ClInclude>
+    <ClInclude Include="RemoteOps.h">
+      <Filter>Pliki nagłówkowe\RemoteOps</Filter>
+    </ClInclude>
+    <ClInclude Include="Security.h">
+      <Filter>Pliki nagłówkowe\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="lazyimports.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
