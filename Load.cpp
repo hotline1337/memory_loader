@@ -161,13 +161,6 @@ bool Inject(DWORD processID, char* relativeDllName)
 		system(xorstr_("PASUE"));
 		return false;
 	}
-	std::string ntloaddriver_name;
-	ntloaddriver_name += xorstr_("NtLoadDriver: (");
-	ntloaddriver_name += xorstr_("\\Registry\\Machine\\System\\CurrentControlSet\\Services\\");
-	ntloaddriver_name += random_string_uppercase(12);
-	ntloaddriver_name += xorstr_(") returned 00000000\n");
-	print_prefix_wof(xorstr_("Kernel: ntoskrnl.exe @ fffff8030a000000\n"));
-	print_prefix_wof(ntloaddriver_name.c_str());
 
 #ifdef DEBUG_NTBUFFER
 	NtCreateThreadExBuffer ntBuffer;
