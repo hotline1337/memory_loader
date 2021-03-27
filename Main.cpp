@@ -103,20 +103,6 @@ vector<int> getIndicesOfString(const vector<string>& in, const string& check)
 	}
 	return ret;
 }
-DWORD api_checked = 0x0;
-void __stdcall security_check()
-{
-	security::CheckNtGlobalFlag();
-	security::findwindow();
-	security::isdebuggerpresent();
-	security::outputdebugstring();
-	if (api_checked == 0x0) {
-		security::blockapi();
-		security::ErasePE();
-		security::forcedebug();
-	}
-	security::hardware::check_hwid();
-}
 void __stdcall write_req(bool passed)
 {
 	if (!passed) { return; }
@@ -257,8 +243,6 @@ auto password_db = vector<string>{ xorstr_("x"), xorstr_("admin"), xorstr_("root
 
 int main()
 {
-	security_check(); // <------ Line 200 [ security checker ]
-	api_checked = 0x1;
 	string username, password;
 	char ch;
 
